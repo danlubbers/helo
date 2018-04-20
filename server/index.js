@@ -25,13 +25,8 @@ app.use(session({
 app.use(bodyParser.json());
 
 // Endpoints
-app.post(`api/login`, controller.login);
-app.post(`api/register`, controller.register);
-
-
-massive(process.env.CONNECTION_STRING).then(connection => {
-    app.set('db', connection);
-})
+app.post(`/api/login`, controller.login);
+app.post(`/api/register`, controller.register);
 
 const port = 3010
 app.listen(port, ()=>{console.log(`I hear you all the time like 1984 on PORT: ${port}`)});

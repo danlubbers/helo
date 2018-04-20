@@ -23,19 +23,22 @@ inputPassword(pw) {
 }
 
 addLogin(username, password) {
-    console.log(username)
-    axios.post(`api/login`, {username: username, password: password}).then(res => {
+    console.log(this.state.username)
+    axios.post(`/api/login`, {username: username, password: password}).then(res => {
+        console.log(res)
         this.props.history.push('/dashboard')
     })
 }
 
 addRegister(username, password) {
-    axios.post(`api/register`, {username: username, password: password}).then(res => {
+    axios.post(`/api/register`, {username: username, password: password}).then(res => {
         this.props.history.push('/dashboard')
     }) 
 }
 
     render() {
+        // this is how i check to see if state is being set
+        console.log(this.state)
         return(
             <div>
                 <h1>Auth</h1>

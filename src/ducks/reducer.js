@@ -14,21 +14,21 @@ const PROFILE_PIC = 'PROFILE_PIC';
 export function userName(name) {
     return {
         type: USERNAME,
-        payload: {name}
+        payload: name
     }
 }
 
 export function id(newID) {
     return {
         type: ID,
-        payload: {newID}
+        payload: newID
     }
 }
 
 export function profilePic(pic) {
     return {
         type: PROFILE_PIC,
-        payload: {pic}
+        payload: pic
     }
 }
 
