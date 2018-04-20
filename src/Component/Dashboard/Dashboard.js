@@ -5,14 +5,14 @@ export default class Dashboard extends Component {
     super();
 
     this.state = {
-    //     posts: [],
-    //     search: '',
-    //     userposts: true
-    // };
+        posts: [],
+        search: '',
+        userposts: true
+    };
 
 
     }
-}
+
 
     render() {
         return(
@@ -21,6 +21,6 @@ export default class Dashboard extends Component {
             </div>
         ) 
     }
-}
 
+}
 

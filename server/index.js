@@ -20,7 +20,7 @@ app.use(session({
 }));
 
 // For npm run build 
-// app.use(express.statoc(__dirname + '../build'));
+// app.use(express.static(__dirname + '../build'));
 
 app.use(bodyParser.json());
 
